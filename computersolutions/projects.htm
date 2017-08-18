@@ -1,0 +1,57 @@
+      <div class="masthead">
+        <h3 class="text-muted">Software Solutions</h3>
+        <nav>
+          <ul class="nav nav-justified">
+            <li><a href="#/marketing/home">Home</a></li>
+            <li><a href="#/marketing/projects">Projects</a></li>
+            <li><a href="#/marketing/about">About</a></li>
+            <li><a href="#/marketing/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h2 style="color:#cc0000"><strong>PROJECTS</strong></h2>
+        <br>
+       
+        <p class="lead">Since 1986, Computer Solutions, Ltd. Has Been A Leading Independent Provider Of Multi-Vendor Computer Products And Services From World-Class Companies Like Cisco, Compaq, HP, VMware And Microsoft.</p>
+      </div>
+
+
+      <div>
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr class="bg-primary">
+						<th>No</th>
+						<th>Name</th>
+            <th>Year</th>
+            <th>Client</th>
+            <th>Details</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="p in projects" data-ng-click="prodetail(p)" class="pointer">
+						
+						<td >{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+						<td>{{ p.year }}</td>
+            <td>{{ p.client }}</td>
+            <td align="center"><a class="btn btn-primary" role="button">Details &raquo;</a></td>
+					</tr>
+				</tbody>
+
+				
+			</table>
+
+
+
+		</div>
+
+      
+
+
+
+    
+
+
